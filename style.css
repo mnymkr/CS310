@@ -1,7 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'EnchantedLand', serif;
     margin: 0;
     padding: 0;
+}
+
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url('MedievalSharp.ttf');
+}
+
+@font-face {
+    font-family: 'OldLondon';
+    src: url('OldLondon.ttf');
+}
+
+@font-face {
+    font-family: 'EnchantedLand';
+    src: url(EnchantedLand.otf);
 }
 
 .ref-image {
@@ -9,12 +24,6 @@ body {
     height: 50%;
     align-self: center;
 }
-
-/* header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-} */
 
 header h1 {
     margin: 0;
@@ -28,6 +37,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    height: 72px;
 }
 
 .logo {
@@ -62,20 +72,10 @@ input[type="email"] {
     border-radius: 3px;
 }
 
-/* nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-} */
-
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 40px;
 }
 
 section {
@@ -92,20 +92,26 @@ footer {
     margin-top: 30px;
 }
 
+footer a {
+    font-size: 30px;
+}
+
 .buy-button {
     align-self: center;
-    width:100px;
-    display: inline-block;
+    width:150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 40px;
-    background-color: #4CAF50;
+    background-color: #af4c4c;
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 40px;
     border-radius: 5px;
 }
 
 .buy-button:hover {
-    background-color: #3E8E41;
+    background-color: #8e3e3e;
 }
 
 .home-button {
@@ -125,8 +131,9 @@ footer {
 }
 
 main { 
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 10%;
+    margin-top: 72px;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -137,25 +144,34 @@ main {
     padding: 0;
 }
 
+h3 {
+    font-size: 35px;;
+}
+
 .product-item {
     /* padding-top: 20px; */
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    background-color:darkgray;
+    background-color:rgb(212, 212, 212);
     border-radius: 15px;
+    padding-right: 20px;
 }
 
 .product-item img {
-    width: 200px;
-    height: 200px;
+    width:300px;
+    height:300px;
     margin-right: 20px;
     /* margin-left: 20px; */
     border-radius: 15px 0 0 15px;
 }
 
 a {
-    color:aqua;
+    color:rgb(151, 28, 28);
+}
+
+.intro {
+    margin: 0 10% 0 10%;
 }
 
 .product-description h3 {
@@ -165,6 +181,7 @@ a {
 .comparison-table {
     border-collapse: collapse;
     width: 100%;
+    font-size: 25px;
 }
 
 .comparison-table th,
@@ -178,6 +195,10 @@ a {
 }
 
 .comparison-table th {
-    background-color: #4CAF50;
+    background-color: #751313;
     color: white;
+}
+
+p {
+    font-size:30px;
 }
