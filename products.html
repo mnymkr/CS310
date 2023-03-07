@@ -2,43 +2,105 @@
 <html>
 <head>
     <title>My Website - Product</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="banner.png" style="width:100%" alt="Man holding sword in a cool pose"></a>
+        <a href="index.html"><img class="logo" id="logo" src="generic-logo.svg"
+                alt="Man holding sword in a cool pose"></a></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">product</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="about.html">About us</a></li>
+                <li><a href="products.html">Buy Now</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>ALL-YOU-CAN-SLASH</h2>
-        <img src="sword1.jpg" alt="A fine gentleman with a cutlass">
-        <ul>
+        <img src="sword1.jpg" alt="A fine gentleman with a cutlass" class="ref-image">
+        <!-- <ul>
             <li>
                 <p>Sword 1: the finest Frend sword we have in our inventory, it's called a Raper or something</p>
                 <img src="rapier.jpg" alt="french sword"><br>
-                <a href="buy.html">Buy Now!</a>
+                <a href="buy.html" class="buy-button">Buy Now!</a>
             </li>
             <li>
                 <p>Fulfill your pirate fantasy with this sabre that we dug up from a buried treasure! It event has the blood of its last victim still on it! Competitive price!</p>
                 <img src="sabre.jpg" alt="pirate sword"><br>
-                <a href="buy.html">Buy Now!</a>
+                <a href="buy.html" class="buy-button">Buy Now!</a>
             </li>
             <li>
                 <p>Oh man, this is sick! Our exclusive SICKLE sword is out today with very competitive price you cannot find elsewhere.
                     Use with a hammer for added efficiency.
                 </p>
                 <img src="sickle.jpg" alt="sickle sword"><br>
-                <a href="buy.html">Buy Now!</a>
+                <a href="buy.html" class="buy-button">Buy Now!</a>
+            </li>
+        </ul> -->
+
+        <ul class="product-list">
+            <li class="product-item">
+                <img src="rapier.jpg" alt="french sword">
+                <div class="product-description">
+                    <h3>French Sword</h3>
+                    <p>Sword 1: the finest Frend sword we have in our inventory, it's called a Raper or something</p>
+                    <p><a href="buy.html" class="buy-button">Buy Now</a></p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="sabre.jpg" alt="sabre">
+                <div class="product-description">
+                    <h3>Pirate sword</h3>
+                    <p>Fulfill your pirate fantasy with this sabre that we dug up from a buried treasure! It event has the blood of its last
+                    victim still on it! Competitive price!</p>
+                    <p><a href="buy.html" class="buy-button">Buy Now</a></p>
+                </div>
+            </li>
+            <li class="product-item">
+                <img src="sickle.jpg" alt="sickle sword">
+                <div class="product-description">
+                    <h3>Sickle</h3>
+                    <p>Oh man, this is sick! Our exclusive SICKLE sword is out today with very competitive price you cannot find elsewhere.</p>
+                    <p><a href="buy.html" class="buy-button">Buy Now</a></p>
+                </div>
             </li>
         </ul>
+        <p>For a detailed comparison of the swords, see the table below:</p>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Sword</th>
+                    <th>Sharpness</th>
+                    <th>Weight</th>
+                    <th>Length</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>French sword</td>
+                    <td>8/10</td>
+                    <td>1.5 kg</td>
+                    <td>120 cm</td>
+                </tr>
+                <tr>
+                    <td>Pirate sword</td>
+                    <td>9/10</td>
+                    <td>1.2 kg</td>
+                    <td>100 cm</td>
+                </tr>
+                <tr>
+                    <td>Sickle</td>
+                    <td>7/10</td>
+                    <td>1 kg</td>
+                    <td>105 cm</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
-        <p>© 2023 by ME. All rights reserved.</p>
+        <p>© 2023 by HO&HO. All rights reserved.</p><a href="mailto: comments@whitehouse.gov">Contact us.</a>
         <p>Created on: <time datetime="2023-01-01">March 7th, 2023</time></p>
         <p>Last updated on: <time datetime="2023-03-06">March 7th, 2023</time></p>
     </footer>
