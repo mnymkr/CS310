@@ -117,17 +117,18 @@ footer a {
 .home-button {
     display: inline-block;
     padding: 20px 40px;
-    background-color:cornflowerblue;
+    background-color:#af4c4c;
     color: white;
     text-decoration: none;
     font-size: 24px;
     border-radius: 5px;
     align-self: center;
+    font-size: 40px;
     margin: 30px
 }
 
 .home-button:hover {
-    background-color:aquamarine;
+    background-color:#8e3e3e;
 }
 
 main { 
