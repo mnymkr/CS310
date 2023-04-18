@@ -1,48 +1,52 @@
-body {
-    font-family: 'EnchantedLand', serif;
-    margin: 0;
-    padding: 0;
+@media (max-width: 600px) {
+    /* styles for small screens */
+    header, main, footer {
+        width: 100%;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
 }
 
 @font-face {
-    font-family: 'MedievalSharp';
-    src: url('MedievalSharp.ttf');
+    font-family: 'inter';
+    src: url('inter_font.ttf');
 }
 
-@font-face {
-    font-family: 'OldLondon';
-    src: url('OldLondon.ttf');
-}
-
-@font-face {
-    font-family: 'EnchantedLand';
-    src: url(EnchantedLand.otf);
-}
-
-.ref-image {
-    width: 50%;
-    height: 50%;
-    align-self: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333;
-    position: fixed;
+footer {
+    background-color: #f0f0f5;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
     width: 100%;
-    top: 0;
-    height: 72px;
+    margin-top: 30px;
+    display:flex;
+    flex-direction: row;
+    column-gap: 10%;
+}
+
+body {
+    font-family: 'inter', serif;
+    margin:0;
+    padding:0;
+}
+
+main { 
+    margin-top: 72px;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
-    margin: 10px;
-    width: 60%;
+    height: 72px;
+}
+
+.footer_column {
+    flex: 3;
+    text-align: left;
 }
 
 nav ul {
@@ -50,156 +54,23 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-}
+}   
 
 nav li {
     margin-right: 20px;
 }
 
-form {
+footer button {
+    width: 50%;
+}
+
+header {
+    background-color: #f0f0f5;
     display: flex;
     align-items: center;
-}
-
-label {
-    margin-right: 10px;
-}
-
-input[type="email"] {
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-}
-
-section {
-    margin: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    bottom: 0;
+    justify-content: space-between;
+    position: fixed;
     width: 100%;
-    margin-top: 30px;
-}
-
-footer a {
-    font-size: 30px;
-}
-
-.buy-button {
-    align-self: center;
-    width:150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #af4c4c;
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-    border-radius: 5px;
-}
-
-.buy-button:hover {
-    background-color: #8e3e3e;
-}
-
-.home-button {
-    display: inline-block;
-    padding: 20px 40px;
-    background-color:#af4c4c;
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
-    border-radius: 5px;
-    align-self: center;
-    font-size: 40px;
-    margin: 30px
-}
-
-.home-button:hover {
-    background-color:#8e3e3e;
-}
-
-main { 
-    margin-left: 10%;
-    margin-top: 72px;
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
-}
-
-.product-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    font-size: 35px;;
-}
-
-.product-item {
-    /* padding-top: 20px; */
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color:rgb(212, 212, 212);
-    border-radius: 15px;
-    padding-right: 20px;
-}
-
-.product-item img {
-    width:300px;
-    height:300px;
-    margin-right: 20px;
-    /* margin-left: 20px; */
-    border-radius: 15px 0 0 15px;
-}
-
-a {
-    color:rgb(151, 28, 28);
-}
-
-.intro {
-    margin: 0 10% 0 10%;
-}
-
-.product-description h3 {
-    margin: 0;
-}
-
-.comparison-table {
-    border-collapse: collapse;
-    width: 100%;
-    font-size: 25px;
-}
-
-.comparison-table th,
-.comparison-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.comparison-table tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.comparison-table th {
-    background-color: #751313;
-    color: white;
-}
-
-p {
-    font-size:30px;
+    top: 0;
+    height: 72px;
 }
