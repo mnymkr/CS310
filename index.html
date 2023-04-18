@@ -10,39 +10,96 @@
     <header>
         <img class="logo" src="image.svg" alt="generic company logo">
         <span>EDGE MASTERS</span>
-        <nav>
-            <ul>
-                <li class="nav_bar_item"><a href="index.html">Home</a></li>
-                <li class="nav_bar_item"><a href="about.html">About Us</a></li>
-                <li class="nav_bar_item"><a href="forum.html">Forum</a></li>
-                <li class="nav_bar_item"><a href="products.html">Products</a></li>
-                <li class="nav_bar_item"><a href="cart.html">Cart</a></li>
-            </ul>
-        </nav>
+        <div class="nav_bar">
+            <div class="nav_item"><a href="index.html">HOME</a></div>
+            <div class="nav_item"><a href="about.html">ABOUT US</a></div>
+            <div class="nav_item"><a href="forum.html">FORUM</a></div>
+            <div class="nav_item"><a href="products.html">PRODUCT</a></div>
+            <div class="nav_item"><a href="cart.html">CART</a></div>
+        </div>
     </header>
     <main>
-      BODY
+        <div id="home_banner">
+            <div id="home_banner_text">
+                <p>New collections in stock</p>
+                <p>Are you ready to add some new swords to your collection? We have just received a fresh batch of amazing
+                    blades from
+                    different regions and eras that will blow your mind.</p>
+                <a>Browse now ></a>
+            </div>
+            <div id="home_slider">
+                <img src="image.svg">
+            </div>
+        </div>
+        <div id="home_item">
+            <table id="home_item_table">
+                <tr class="home_item_table_row">
+                    <td>
+                        <div class="home_item_table_item">
+                            <div class="home_item_table_item_image-container">
+                                <img style="object-fit: fill;" src="image.svg">
+                            </div>
+                            <strong>Currently Recruiting!</strong>
+                            <p>We are currently recruiting new members to our highly competitive and super efficient staff to help hunt down the
+                                best
+                                swords in the world.</p>
+                            <a>Apply Now ></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="home_item_table_item">
+                            <div class="home_item_table_item_image-container">
+                                <img style="object-fit: fill;" src="image.svg">
+                            </div>
+                            <strong>Become A Business Partner!</strong>
+                            <p>Be our business partner and join a chain of globally competitive sword merchant world.</p>
+                            <a>Contact Us ></a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="home_item_table_item">
+                            <div class="home_item_table_item_image-container">
+                                <img style="object-fit: fill;" src="image.svg">
+                            </div>
+                            <strong>Join The Community!</strong>
+                            <p>The sword community is growing strong. Be a member now to let</p>
+                            <a>Log In ></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="script.js"></script>
     </main>
     <footer>
-        <div style='flex:1/2'></div>
-        <div class='footer_column'>
-            <strong>COPYRIGHT EDGE MASTERS 2023</strong>
-            <p>Here you can use rows and columns to organize your content.
-            Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-        </div>
-        <div class='footer_column'>
-            <strong>BECOME A PARTNER</strong>
-            <p>We are looking for new exciting ways to bring our service to more of the Earth!</p>
-            <button>Leave your contact</button><br>
-            <button>Career</button>
-        </div>
-        <div class='footer_column'>
-            <strong>MORE OF US</strong><br>
-            <br>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a><br>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
-        </div>
+        <table>
+            <tr>
+                <td style="margin-left: 8%;">
+                    <div class='footer_column'>
+                        <strong>COPYRIGHT</strong><br>
+                        <strong>EDGE MASTERS 2023</strong>
+                        <p>All rights reserved. Any infingement will result in legal actions.</p>
+                    </div>
+                </td>
+                <td>
+                    <div class='footer_column'>
+                        <strong>BECOME A PARTNER</strong>
+                        <p>We are looking for new exciting ways to bring our service to more of the Earth!</p>
+                        <button>Leave your contact</button><br>
+                        <button>Career</button>
+                    </div>
+                </td>
+                <td style="width:20%">
+                    <div class='footer_column'>
+                        <strong>MORE OF US</strong><br>
+                        <br>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a><br>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </footer>
 </body>
 </html>
