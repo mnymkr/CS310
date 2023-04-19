@@ -1,13 +1,13 @@
 Hoc:
-item details DONE
-cart x
-forum 
-checkout x
-about us x
+item details
+cart
+forum
+checkout
+about us
 
 Hoang:
-sign in 
-payment success 
-career x
-partner x
-home DONE
+sign in
+payment success
+career
+partner
+home
