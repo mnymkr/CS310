@@ -172,7 +172,7 @@ footer tr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+}
     body {
         font-family: 'inter', serif;
         margin: 0;
@@ -185,7 +185,7 @@ footer tr {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+    }
         footer td {
             width: 30%;
 
