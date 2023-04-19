@@ -1,15 +1,6 @@
-@media (max-width: 600px) {
-
-    /* styles for small screens */
-    header,
-    main,
-    footer {
-        width: 100%;
-    }
-
-    nav ul {
-        display: block;
-        text-align: center;
+@media (max-width: 1024px) {
+    .slideshow-container {
+        display: none;
     }
 }
 

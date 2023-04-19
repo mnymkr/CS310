@@ -75,6 +75,19 @@ footer button {
     width: 90%;
 }
 
+.item-page-main {
+    background-color: #28AFB0;
+}
+
+.item-detail {
+    background-color: #465775;
+    padding: 10px;
+    margin: 2%;
+    width: 50%;
+    border-radius: 5px;
+    color: #FBFCFF;
+}
+
 footer tr {
     display: flex;
     flex-direction: row;
@@ -141,6 +154,19 @@ main {
     margin-right: 5%;
     width: 40%;
     height: 20%;
+    background-color: #df2935;
+    color: #FBFCFF;
+    border-radius: 5px;
+}
+
+.product-image-container {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.product-image-container > img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .productCartButton {
@@ -206,6 +232,7 @@ header {
     width: 30%;
     background-color: #28AFB0;
     border-radius: 5px;
+    border: 1px solid #28AFB0;
 }
 
 .cell > a {
