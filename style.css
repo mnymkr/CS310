@@ -92,11 +92,18 @@ nav li {
     padding: 0%;
 }
 
-#cartButton {
+.itemCartButton {
     margin-top: 5%;
     margin-right: 5%;
     width: 40%;
     height: 20%;
+}
+
+.productCartButton {
+    /* margin-top: 5%; */
+    /* margin-right: 5%; */
+    width: 60%;
+    min-height: 60%;
 }
 
 #buyButton {
