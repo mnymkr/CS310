@@ -65,6 +65,29 @@ nav li {
     margin-right: 20px;
 }
 
+.nav_bar {
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    height: inherit;
+}
+
+.nav_item > a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav_item {
+    margin: 0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    width: 100px;
+    vertical-align: middle;
+}
+
 #main-image {
     width: 100%;
     height: 100%;

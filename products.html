@@ -11,15 +11,13 @@
     <header>
         <img class="logo" src="image.svg" alt="generic company logo">
         <span>EDGE MASTERS</span>
-        <nav>
-            <ul>
-                <li class="nav_bar_item"><a href="index.html">Home</a></li>
-                <li class="nav_bar_item"><a href="about.html">About Us</a></li>
-                <li class="nav_bar_item"><a href="forum.html">Forum</a></li>
-                <li class="nav_bar_item"><a href="products.html">Products</a></li>
-                <li class="nav_bar_item"><a href="cart.html">Cart</a></li>
-            </ul>
-        </nav>
+        <div class="nav_bar">
+            <div class="nav_item"><a href="index.html">HOME</a></div>
+            <!-- <div class="nav_item"><a href="about.html">ABOUT US</a></div> -->
+            <div class="nav_item"><a href="login.html">FORUM</a></div>
+            <div class="nav_item"><a href="products.html">PRODUCT</a></div>
+            <!-- <div class="nav_item"><a href="cart.html">CART</a></div> -->
+        </div>
     </header>
     <main>
         <!-- this div flex the items in a column, 3 items in a column -->
@@ -33,7 +31,7 @@
                             <img src="image.svg" alt="Item Image" id="main-image">
                         </div>
                         <div style="padding:5%;">
-                            <h3>Product Name</h3>
+                            <a href="item.html"><h3>Product Name</h3></a>
                             <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
                             </p>
@@ -48,7 +46,7 @@
                             <img src="image.svg" alt="Item Image" id="main-image">
                         </div>
                         <div style="padding:5%;">
-                            <h3>Product Name</h3>
+                            <a href="item.html"><h3>Product Name</h3></a>
                             <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
                             </p>
@@ -63,55 +61,7 @@
                             <img src="image.svg" alt="Item Image" id="main-image">
                         </div>
                         <div style="padding:5%;">
-                            <h3>Product Name</h3>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="productCartButton"><strong>Add to cart</strong></button>
-                    </div>
-                </div>
-            </div>
-            <!-- this div flex the items in a row, 3 items in a row -->
-            <div style="display: flex; flex-direction: row;">
-                <!-- this div is for 1 item -->
-                <div style="background-color: #D9D9D9; padding: 10px; margin: 2%; width: 30%;">
-                    <div style="display: flex; flex-direction: column; align-items: center;">
-                        <div style="padding: 5%;">
-                            <img src="image.svg" alt="Item Image" id="main-image">
-                        </div>
-                        <div style="padding:5%;">
-                            <h3>Product Name</h3>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="productCartButton"><strong>Add to cart</strong></button>
-                    </div>
-                </div>
-                <!-- this div is for 1 item -->
-                <div style="background-color: #D9D9D9; padding: 10px; margin: 2%; width: 30%;">
-                    <div style="display: flex; flex-direction: column; align-items: center;">
-                        <div style="padding: 5%;">
-                            <img src="image.svg" alt="Item Image" id="main-image">
-                        </div>
-                        <div style="padding:5%;">
-                            <h3>Product Name</h3>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="productCartButton"><strong>Add to cart</strong></button>
-                    </div>
-                </div>
-                <!-- this div is for 1 item -->
-                <div style="background-color: #D9D9D9; padding: 10px; margin: 2%; width: 30%;">
-                    <div style="display: flex; flex-direction: column; align-items: center;">
-                        <div style="padding: 5%;">
-                            <img src="image.svg" alt="Item Image" id="main-image">
-                        </div>
-                        <div style="padding:5%;">
-                            <h3>Product Name</h3>
+                            <a href="item.html"><h3>Product Name</h3></a>
                             <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
                             </p>
@@ -129,7 +79,7 @@
                             <img src="image.svg" alt="Item Image" id="main-image">
                         </div>
                         <div style="padding:5%;">
-                            <h3>Product Name</h3>
+                            <a href="item.html"><h3>Product Name</h3></a>
                             <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
                             </p>
@@ -144,7 +94,7 @@
                             <img src="image.svg" alt="Item Image" id="main-image">
                         </div>
                         <div style="padding:5%;">
-                            <h3>Product Name</h3>
+                            <a href="item.html"><h3>Product Name</h3></a>
                             <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
                             </p>
@@ -159,7 +109,57 @@
                             <img src="image.svg" alt="Item Image" id="main-image">
                         </div>
                         <div style="padding:5%;">
-                            <h3>Product Name</h3>
+                            <a href="item.html"><h3>Product Name</h3></a>
+                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+                        <button class="productCartButton"><strong>Add to cart</strong></button>
+                    </div>
+                </div>
+            </div>
+            <!-- this div flex the items in a row, 3 items in a row -->
+            <div style="display: flex; flex-direction: row;">
+                <!-- this div is for 1 item -->
+                <div style="background-color: #D9D9D9; padding: 10px; margin: 2%; width: 30%;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="padding: 5%;">
+                            <img src="image.svg" alt="Item Image" id="main-image">
+                        </div>
+                        <div style="padding:5%;">
+                            <a href="item.html"><h3>Product Name</h3></a>
+                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+                        <button class="productCartButton"><strong>Add to cart</strong></button>
+                    </div>
+                </div>
+                <!-- this div is for 1 item -->
+                <div style="background-color: #D9D9D9; padding: 10px; margin: 2%; width: 30%;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="padding: 5%;">
+                            <img src="image.svg" alt="Item Image" id="main-image">
+                        </div>
+                        <div style="padding:5%;">
+                            <a href="item.html"><h3>Product Name</h3></a>
+                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                            </p>
+                        </div>
+                        <button class="productCartButton"><strong>Add to cart</strong></button>
+                    </div>
+                </div>
+                <!-- this div is for 1 item -->
+                <div style="background-color: #D9D9D9; padding: 10px; margin: 2%; width: 30%;">
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                        <div style="padding: 5%;">
+                            <img src="image.svg" alt="Item Image" id="main-image">
+                        </div>
+                        <div style="padding:5%;">
+                            <a href="item.html">
+                                <h3>Product Name</h3>
+                            </a>
                             <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit.
                             </p>

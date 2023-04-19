@@ -137,9 +137,7 @@ main {
     margin-bottom: 15px;
 }
 
-.home_item_table_item>strong,
-p,
-a {
+.home_item_table_item>strong,p,a {
     margin-left: 20px;
     margin-right: 20px;
 }
