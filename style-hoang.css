@@ -18,6 +18,22 @@
     src: url('inter_font.ttf');
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
 body {
     font-family: 'inter', serif;
     margin: 0;
@@ -28,9 +44,14 @@ body {
     height: 72px;
 }
 
+.company_name {
+    font-size: x-large;
+    color: #474747;
+}
+
 /* HEADER */
 header {
-    background-color: #f0f0f5;
+    background-color: #FBFCFF;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,7 +60,8 @@ header {
     width: 100%;
     top: 0;
     height: 72px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    z-index: 99;
 }
 
 header img {
@@ -47,21 +69,27 @@ header img {
 }
 
 .nav_bar {
-    background-color: #f0f0f5;
     display: flex;
     flex-direction: row;
     align-self: flex-end;
     height: inherit;
+    margin-right: 5%;
+    color: #d9d9d9;
+}
+
+.current {
+    background-color: #D0CCD0;
 }
 
 .nav_item {
     margin: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     height: inherit;
     width: 100px;
     vertical-align: middle;
+    justify-content: space-evenly;
 }
 
 /* MAIN */
@@ -74,10 +102,11 @@ main {
 }
 
 #home_banner {
-    background-color: #d9d9d9;
+    background-color: #465775;
     display: flex;
     flex-direction: row;
-    height: 425;
+    height: 300px;
+    color:#f0f0f5;
 }
 
 #home_banner_text {
@@ -87,15 +116,79 @@ main {
     margin-right: 5%;
 }
 
-#home_slider {
-    flex: 1;
-    height: inherit;
+#home_banner_text b {
+    font-size: x-large;
+
 }
 
-#home_slider>img {
-    width: 100%;
-    height: auto;
-    display: block;
+#home_banner_text p {
+    font-size: large;
+}
+
+.action-button {
+    display: flex;
+    flex-direction: column;
+    width:150px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #df2935;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: space-evenly;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    display: inline-block;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    flex: 1;
+    height: 300px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides > img {
+    object-fit: cover;
+    height: 300px;
+}
+
+/* Add a background color to the active dot/circle */
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .home_item_table {
@@ -115,21 +208,23 @@ main {
 }
 
 #home_item {
-    margin-top: 50px;
     padding: 5%;
+    background-color: #FBFCFF;
 }
 
 .home_item_table_item {
     margin: 0px 15px 0px 15px;
-    background-color: #d9d9d9;
+    background-color: #28AFB0;
     display: flex;
     flex-direction: column;
     min-height: 340px;
     position: relative;
+    color: #FBFCFF;
+    border-radius: 5px;
 }
 
-.home_item_table_item_image-container>img {
-    height: auto;
+.home_item_table_item_image-container >img {
+    max-height: 250px;
     /* Make sure images are scaled correctly. */
     width: 100%;
     /* Adhere to container width. */
@@ -150,8 +245,8 @@ main {
 
 /* FOOTER */
 footer {
-    background-color: #f0f0f5;
-    color: black;
+    background-color: #465775;
+    color: #FBFCFF;
     padding: 10px;
     text-align: center;
     bottom: 0;
@@ -175,6 +270,11 @@ footer tr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+footer a {
+    color: #FBFCFF;
+    margin-left: 0px;
 }
 
 body {
@@ -259,7 +359,7 @@ footer button {
     width: 50%;
 }
 
-header {
+/* header {
     background-color: #f0f0f5;
     display: flex;
     align-items: center;
@@ -268,7 +368,7 @@ header {
     width: 100%;
     top: 0;
     height: 72px;
-}
+} */
 
 /* SIGN IN DIALOG */
 #signin-dialog {
@@ -278,7 +378,7 @@ header {
     margin-bottom: 5%;
     width: 50%;
     min-width: 400px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     align-items: center;
     background-color: #d9d9d9;
 }
