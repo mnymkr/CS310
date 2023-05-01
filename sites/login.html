@@ -3,23 +3,32 @@
 
 <head>
     <title>Sign Up - EDGE MASTERS</title>
-    <link rel="stylesheet" type="text/css" href="../scripts/style-hoang.css">
+    <link rel="stylesheet" type="text/css" href="../scripts/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
-        <img class="logo" src="../photos/logo.png" alt="generic company logo">
-        <b class="company_name">EDGE MASTERS</b>
-        <div class="nav_bar">
-            <div class="nav_item current"><a href="index.html">HOME</a></div>
-            <!-- <div class="nav_item"><a href="about.html">ABOUT US</a></div> -->
-            <div class="nav_item"><a href="login.html">FORUM</a></div>
-            <div class="nav_item"><a href="products.html">PRODUCT</a></div>
-            <!-- <div class="nav_item"><a href="cart.html">CART</a></div> -->
+        <div class="header">
+            <img class="logo" src="../photos/logo.png" alt="generic company logo">
+            <b class="company_name">EDGE MASTERS</b>
+            <div class="nav_bar">
+                <a class="nav_item" href="../index.html">HOME</a>
+                <a class="nav_item current" href="login.html">FORUM</a>
+                <a class="nav_item" href="products.html">PRODUCT</a>
+            </div>
+            <div class="nav_menu" onclick="openNavMenu()">
+                <div class="nav_menu_icon"></div>
+                <div class="nav_menu_icon"></div>
+                <div class="nav_menu_icon"></div>
+            </div>
+        </div>
+        <div class="nav_menu_container">
+            <a class="nav_menu_item" href="../index.html"><span class="nav_menu_item_text">HOME</span></a>
+            <a class="nav_menu_item" href="products.html"><span class="nav_menu_item_text">PRODUCT</span></a>
         </div>
     </header>
-    <main style="background-color: #28AFB0;">
+    <main>
         <div class="signin-dialog">
             <br>
             <h2>SIGN UP FOR A NEW ACCOUNT</h2><br>
@@ -36,33 +45,30 @@
                 
             </form>
         </div>
-    <script src="script.js"></script>
+    <script src="../scripts/script.js"></script>
     </main>
     <footer>
-        <footer>
-            <div style='flex:1/2'></div>
-            <div class='footer_column'>
-                <strong>COPYRIGHT EDGE MASTERS 2023</strong>
-                <br>
-                <br>
-                <p>Here you can use rows and columns to organize your content.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            </div>
-            <div class='footer_column'>
-                <strong>BECOME A PARTNER</strong>
-                <br>
-                <p>We are looking for new exciting ways to bring our service to more of the Earth!</p>
-                <button>Leave your contact</button><br>
-                <button>Career</button>
-            </div>
-            <div class='footer_column'>
-                <strong>MORE OF US</strong><br>
-                <br>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a><br>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
-            </div>
-        </footer>
+        <div class='footer_column'>
+            <strong>COPYRIGHT EDGE MASTERS 2023</strong>
+            <br>
+            <br>
+            <p>Here you can use rows and columns to organize your content.
+                Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        </div>
+        <div class='footer_column'>
+            <strong>BECOME A PARTNER</strong>
+            <br>
+            <p>We are looking for new exciting ways to bring our service to more of the Earth!</p>
+            <button>Leave your contact</button><br>
+            <button>Career</button>
+        </div>
+        <div class='footer_column'>
+            <strong>MORE OF US</strong><br>
+            <br>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Facebook</a><br>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a><br>
+        </div>
     </footer>
 </body>
 
