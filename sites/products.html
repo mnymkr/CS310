@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>View product - EDGE MASTERS</title>
@@ -10,12 +10,14 @@
 <body>
     <header>
         <div class="header">
-            <img class="logo" src="../photos/logo.png" alt="generic company logo">
+            <a class="logo" href="../index.html">
+                <img src="../photos/logo.png" alt="generic company logo">
+            </a>
             <b class="company_name">EDGE MASTERS</b>
             <div class="nav_bar">
-                <a class="nav_item" href="../index.html">HOME</a>
-                <a class="nav_item" href="login.html">FORUM</a>
-                <a class="nav_item current" href="products.html">PRODUCT</a>
+                <a class="nav_item" href="../index.html"><b>HOME</b></a>
+                <a class="nav_item" href="login.html"><b>FORUM</b></a>
+                <a class="nav_item current" href="products.html"><b>PRODUCT</b></a>
             </div>
             <div class="nav_menu" onclick="openNavMenu()">
                 <div class="nav_menu_icon"></div>
@@ -29,136 +31,141 @@
         </div>
     </header>
     <main>
-        <!-- this div flex the items in a column, 3 items in a column -->
-        <div style="display: flex; flex-direction: column; width: 80%; align-items: center;">
-            <!-- this div flex the items in a row, 3 items in a row -->
-            <div style="display: flex; flex-direction: row;">
-                <!-- this div is for 1 item -->
-                <div class="cell">
-                    <div style="display: flex; flex-direction: column; align-items: center; width:100%">
-                        <div class="product-image-container">
-                            <img style="object-fit: fill;" class="item-img" src="../photos/sword1.jpg" alt="Item Image"
-                                id="main-image">
-                        </div>
-                        <div class="item-desc">
-                            <a href="item.html">
-                                <h3 style="color:#FBFCFF">Product Name</h3>
-                            </a>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="action-button"><strong>Add to cart</strong></button>
+        <div class="product-wrap">
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
                     </div>
-                </div>
-                <!-- this div is for 1 item -->
-                <div class="cell">
-                    <div style="display: flex; flex-direction: column; align-items: center; width:100%">
-                        <div class="product-image-container">
-                            <img style="object-fit: fill;" class="item-img" src="../photos/sword1.jpg" alt="Item Image"
-                                id="main-image">
-                        </div>
-                        <div class="item-desc">
-                            <a href="item.html">
-                                <h3 style="color:#FBFCFF">Product Name</h3>
-                            </a>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="action-button"><strong>Add to cart</strong></button>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
                     </div>
-                </div>
-                <!-- this div is for 1 item -->
-                <div class="cell">
-                    <div style="display: flex; flex-direction: column; align-items: center; width:100%">
-                        <div class="product-image-container">
-                            <img style="object-fit: fill;" class="item-img" src="../photos/sword1.jpg" alt="Item Image"
-                                id="main-image">
-                        </div>
-                        <div class="item-desc">
-                            <a href="item.html">
-                                <h3 style="color:#FBFCFF">Product Name</h3>
-                            </a>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="action-button"><strong>Add to cart</strong></button>
-                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
                 </div>
             </div>
-            <!-- this div flex the items in a row, 3 items in a row -->
-            <div style="display: flex; flex-direction: row;">
-                <!-- this div is for 1 item -->
-                <div class="cell">
-                    <div style="display: flex; flex-direction: column; align-items: center; width:100%">
-                        <div class="product-image-container">
-                            <img style="object-fit: fill;" class="item-img" src="../photos/sword1.jpg" alt="Item Image"
-                                id="main-image">
-                        </div>
-                        <div class="item-desc">
-                            <a href="item.html">
-                                <h3 style="color:#FBFCFF">Product Name</h3>
-                            </a>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="action-button"><strong>Add to cart</strong></button>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
                     </div>
-                </div>
-                <!-- this div is for 1 item -->
-                <div class="cell">
-                    <div style="display: flex; flex-direction: column; align-items: center; width:100%">
-                        <div class="product-image-container">
-                            <img style="object-fit: fill;" class="item-img" src="../photos/sword1.jpg" alt="Item Image"
-                                id="main-image">
-                        </div>
-                        <div class="item-desc">
-                            <a href="item.html">
-                                <h3 style="color:#FBFCFF">Product Name</h3>
-                            </a>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="action-button"><strong>Add to cart</strong></button>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
                     </div>
-                </div>
-                <!-- this div is for 1 item -->
-                <div class="cell">
-                    <div style="display: flex; flex-direction: column; align-items: center; width:100%">
-                        <div class="product-image-container">
-                            <img style="object-fit: fill;" class="item-img" src="../photos/sword1.jpg" alt="Item Image"
-                                id="main-image">
-                        </div>
-                        <div class="item-desc">
-                            <a href="item.html">
-                                <h3 style="color:#FBFCFF">Product Name</h3>
-                            </a>
-                            <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                            </p>
-                        </div>
-                        <button class="action-button"><strong>Add to cart</strong></button>
-                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
                 </div>
             </div>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
+                    </div>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
+                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
+                    </div>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
+                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
+                    </div>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
+                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
+                    </div>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
+                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
+                    </div>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
+                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
+                </div>
+            </div>
+            <div class="product">
+                <a href="item.html">
+                    <div class="product-image-container">
+                        <img src="../photos/sword1.jpg">
+                    </div>
+                    <div class="product-desc">
+                        <h3>Kool-aid Katana</h3>
+                        <p>A very very short product description. Lorem ipsum dolor sit amet, consectetur adipiscingelit.
+                        </p>
+                    </div>
+                </a>
+                <div class="product-action">
+                    <button class="action-button"><strong>Add to cart</strong></button>
+                </div>
+            </div>
+            
         </div>
         <script src="../scripts/script-products.js"></script>
     </main>
+    <!-- FOOTER -->
     <footer>
         <div class='footer_column'>
             <strong>COPYRIGHT EDGE MASTERS 2023</strong>
-            <br>
-            <br>
-            <p>Here you can use rows and columns to organize your content.
-                Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <br><br>
+            <p>All rights reserved.
+                Violation will definitely result in legal actions.</p>
         </div>
         <div class='footer_column'>
             <strong>BECOME A PARTNER</strong>
-            <br>
             <p>We are looking for new exciting ways to bring our service to more of the Earth!</p>
             <button>Leave your contact</button><br>
             <button>Career</button>

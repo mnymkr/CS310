@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Details - EDGE MASTERS</title>
@@ -10,12 +10,14 @@
 <body>
     <header>
         <div class="header">
-            <img class="logo" src="../photos/logo.png" alt="generic company logo">
+            <a class="logo" href="../index.html">
+                <img src="../photos/logo.png" alt="generic company logo">
+            </a>
             <b class="company_name">EDGE MASTERS</b>
             <div class="nav_bar">
-                <a class="nav_item" href="../index.html">HOME</a>
-                <a class="nav_item" href="login.html">FORUM</a>
-                <a class="nav_item current" href="products.html">PRODUCT</a>
+                <a class="nav_item" href="../index.html"><b>HOME</b></a>
+                <a class="nav_item" href="login.html"><b>FORUM</b></a>
+                <a class="nav_item current" href="products.html"><b>PRODUCT</b></a>
             </div>
             <div class="nav_menu" onclick="openNavMenu()">
                 <div class="nav_menu_icon"></div>
@@ -24,15 +26,15 @@
             </div>
         </div>
         <div class="nav_menu_container">
-            <a class="nav_menu_item" href="index.html"><span class="nav_menu_item_text">HOME</span></a>
+            <a class="nav_menu_item" href="../index.html"><span class="nav_menu_item_text">HOME</span></a>
             <a class="nav_menu_item" href="login.html"><span class="nav_menu_item_text">FORUM</span></a>
             <a class="nav_menu_item" href="products.html"><span class="nav_menu_item_text">PRODUCT</span></a>
         </div>
     </header>
     <main class="item-page-main">
         <div class="item-detail">
-            <div style="display: flex; justify-content: center;">
-                <div style="padding: 5%;">
+            <div class="item-detail-action">
+                <div class="item-detail-action-image" style="padding: 5%;">
                     <div style="text-align: center;">
                         <img style="border-radius: 5px; margin-bottom: 5px;" src="../photos/sword1.jpg" alt="Item Image" id="main-image">
                     </div>
@@ -49,11 +51,13 @@
                     <button id="quantityButton" onclick="decreaseQuantity()">-</button>
                     <input type="number" id="quantity" value="1">
                     <button id="quantityButton" onclick="increaseQuantity()">+</button><br>
-                    <button class="itemCartButton" onclick="addToCart()"><strong>Add to cart</strong></button>
-                    <button class="itemCartButton" id="buyButton" onclick="addToCart()"><strong>Buy now</strong></button>
+                    <div class="item-detail-action-button">
+                        <button class="itemCartButton" onclick="addToCart()"><strong>Add to cart</strong></button>
+                        <button class="itemCartButton" id="buyButton" onclick="addToCart()"><strong>Buy now</strong></button>
+                    </div>
                 </div>
             </div>
-            <div style="padding:5%;">
+            <div class="item-detail-desc">
                 <h3>Product Description</h3>
                 <p>
                     If you are looking for a katana that combines traditional craftsmanship with modern technology, look
@@ -67,17 +71,16 @@
         </div>
     <script src="../scripts/script-item.js"></script>
     </main>
+    <!-- FOOTER -->
     <footer>
         <div class='footer_column'>
             <strong>COPYRIGHT EDGE MASTERS 2023</strong>
-            <br>
-            <br>
-            <p>Here you can use rows and columns to organize your content.
-                Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <br><br>
+            <p>All rights reserved.
+                Violation will definitely result in legal actions.</p>
         </div>
         <div class='footer_column'>
             <strong>BECOME A PARTNER</strong>
-            <br>
             <p>We are looking for new exciting ways to bring our service to more of the Earth!</p>
             <button>Leave your contact</button><br>
             <button>Career</button>
